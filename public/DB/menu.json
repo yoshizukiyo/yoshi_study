@@ -1,0 +1,22 @@
+{
+	"menu": [
+		{
+			"name": "Department"
+		},
+		{
+			"name": "Community"
+		},
+		{
+			"name": "Gallery"
+		},
+		{
+			"name": "Youtube"
+		},
+		{
+			"name": "Location"
+		},
+		{
+			"name": "Members"
+		}
+	]
+}

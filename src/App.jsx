@@ -1,14 +1,32 @@
+import { Route,Switch } from "react-router-dom";
+
+// common
 import Header from "./jsx_list/Header";
-import Body from "./jsx_list/Body";
 import Footer from "./jsx_list/Footer";
+
+// main
+import Main from "./jsx_list/Main";
+
+// sub
+import Department from "./jsx_list/components/Department";
+import Article from "./jsx_list/components/Article";
+
+// css
 import './scss/style.scss'
 
 function App() {
-	return <>
-		<Header />
-		<Body />
-		<Footer />
-	</>
+	return (
+		<>
+			<Switch>
+				<Route exact path='/' component={Main} />
+				<Route path='/' render={()=><Header type={'sub'}/>} />
+			</Switch>
+
+			<Route path='/article' component={Article} />
+			<Route path='/department' component={Department} />
+			<Footer />
+		</>
+	)
 }
 
 export default App;
