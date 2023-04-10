@@ -1,4 +1,21 @@
 article {
 	background-color: #eee;
-	height: 100%;
+	height: calc(100vh - 80px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-box {
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+
+	.box {
+		width: 200px;
+		height: 200px;
+		background-color: #000;
+	}
 }

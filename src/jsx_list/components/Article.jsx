@@ -1,10 +1,10 @@
-import React from 'react'
-
 function Article() {
 	return (
-		<article>
-			내용
-		</article>
+		<div className='content-box'>
+			<div className="box"></div>
+			<div className="box"></div>
+			<div className="box"></div>
+		</div>
 	)
 }
 

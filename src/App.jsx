@@ -10,6 +10,7 @@ import Main from "./jsx_list/Main";
 // sub
 import Department from "./jsx_list/components/Department";
 import Article from "./jsx_list/components/Article";
+import Youtube from "./jsx_list/components/Youtube";
 
 // css
 import './scss/style.scss'
@@ -24,6 +25,7 @@ function App() {
 
 			<Route path='/article' component={Article} />
 			<Route path='/department' component={Department} />
+			<Route path='/youtube' component={Youtube} />
 			<Footer />
 		</>
 	)
