@@ -5,18 +5,16 @@ import Functions from './Functions';
 import { useState, useEffect, useRef } from 'react';
 
 function Main() {
-	// const [Vis, setVis] = useState([])
-	// let Visual_offset = useRef(null)
-	useEffect(()=>{
-	},[])
+const parent = (data)=>{
+	console.log(data);
+}
 
-	// console.log(Visual_offset);
 	return (
 		<>
 			<main>
 				<Header type={'main'} />
-				<Visual />
-				<Article />
+				<Visual parent={parent} />
+				<Article  />
 				<Functions />
 			</main>
 		</>

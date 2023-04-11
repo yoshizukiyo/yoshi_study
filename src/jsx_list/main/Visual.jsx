@@ -1,19 +1,22 @@
 import {Link} from 'react-router-dom'
-import { useRef,useState,useEffect  } from "react";
+import { useRef,useState,useEffect } from "react";
 
-function Visual() {
-	const [Vis, setVis] = useState()
-	const visual_content = useRef(null)
-	console.log(Vis);
+function Visual({parent}) {
+	const content = useRef(null)
+	const [data, setdata] = useState()
 	useEffect(()=>{
-		setVis(visual_content.current)
-	},[]) 
+		setdata(content.current)
+	},[])
+	parent(data)
+
 	return (
-		<article className='visual' ref={visual_content}>
-		<Link to='/' onClick={(e)=>{e.preventDefault()}}>
-		<img src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="리엑트 아이콘" />
-		</Link>
-	</article>
+		<>
+		<article className='visual'>
+			<Link ref={content} to='/' onClick={()=>{test()}} >
+			<img src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="리엑트 아이콘" />
+			</Link>
+		</article>
+		</>
 
 	)
 }
