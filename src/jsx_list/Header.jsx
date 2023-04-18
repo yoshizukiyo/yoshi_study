@@ -30,7 +30,6 @@ function Header({type}) {
 					*/}
 
 					{datas.map((data,idx)=>{
-						console.log(data);
 						return (
 							<li key={idx}>
 								<NavLink to={`/${data.name}`} className='link' activeStyle={{color:'red'}}>{data.name}</NavLink> {/*탭기능*/}

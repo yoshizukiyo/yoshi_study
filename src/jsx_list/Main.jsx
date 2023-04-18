@@ -5,16 +5,14 @@ import Functions from './Functions';
 import { useState, useEffect, useRef } from 'react';
 
 function Main() {
-const parent = (data)=>{
+	const [data, setdata] = useState()
 	console.log(data);
-}
-
 	return (
 		<>
 			<main>
 				<Header type={'main'} />
-				<Visual parent={parent} />
-				<Article  />
+				<Visual setdata={setdata} />
+				<Article data={data} />
 				<Functions />
 			</main>
 		</>

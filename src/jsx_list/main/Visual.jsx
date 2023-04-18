@@ -1,13 +1,13 @@
 import {Link} from 'react-router-dom'
 import { useRef,useState,useEffect } from "react";
 
-function Visual({parent}) {
+function Visual({setdata}) {
 	const content = useRef(null)
-	const [data, setdata] = useState()
+	const [log, setlog] = useState()
 	useEffect(()=>{
-		setdata(content.current)
+		setlog(content.current)
 	},[])
-	parent(data)
+	setdata(log)
 
 	return (
 		<>
