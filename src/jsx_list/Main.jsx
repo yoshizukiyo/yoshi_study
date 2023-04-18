@@ -6,7 +6,7 @@ import { useState, useEffect, useRef } from 'react';
 
 function Main() {
 	const [data, setdata] = useState()
-	console.log(data);
+	// console.log(data);
 	return (
 		<>
 			<main>

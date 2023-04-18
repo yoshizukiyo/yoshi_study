@@ -1,8 +1,8 @@
 function Article({data}) {
-	console.log(data);
+	console.log(data); 
 	return (
 		<>
-		{data}
+		{'test'}
 		<div className='content-box'>
 			<div className="box"></div>
 			<div className="box"></div>
