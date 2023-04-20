@@ -2,7 +2,7 @@ function Article({data}) {
 	console.log(data); 
 	return (
 		<>
-		{'test'}
+		{/* {'test'} */}
 		<div className='content-box'>
 			<div className="box"></div>
 			<div className="box"></div>
